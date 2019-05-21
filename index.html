@@ -1,0 +1,65 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<form id="survey-form">
+
+  <h1 id="title"> Video Game Survey Form </h1>
+ <br>
+ <br>
+  
+    <p id="description"> A short survey gathering information about the demographics of gamers</p>
+    <br>
+    <br>
+    
+        <label for="name" id="name-label">*Name:</label>
+       <input type="text" id="name" name="firstname" placeholder="Enter your name" required>
+      <br>
+      <br>
+      <br>
+        <label for="email" id="email-label">*Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" id="email" required>
+      <br>
+      <br>
+      <br>
+        <label for="number" id="number-label">*Age:</label>
+        <input type="number" name="quantity" min="1" max="99" placeholder="Enter your age" id="number" required>
+      <br>
+      <br>
+     <p class="p"> *Gender: (select one)<p> <input type="radio" name="gender" value="male"> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other <br>
+      <br>
+      <br>
+      
+     <p class="p"> *Select your favorite Video Game genre:</p> <select name="genre" id="dropdown" >
+        <option selected disabled hidden style='display: none' value=''>Choose one</option>
+        <option value="fighting">Fighting</option>
+        <option value="role playing game"> RPG</option>
+        <option value="horror">Horror</option>
+        <option value="Action"> Action</option>
+       <option value="FPS">First Person Shooter</option>
+      <option value="MMORPG">MMORPG</option>
+      <option value="strategy">Strategy</option>
+  
+        <option value="Adventure">Adventure</option>
+        <option value="Sports">Sports</option>
+      </select>
+      
+      <br>
+      <br>
+  <p class="p"> *What systems do you own?:</p>
+      <input type="checkbox" name="console1" value="Xbox"> XBox<br>
+<input type="checkbox" name="console2" value="PlayStation"> Playstation<br>
+<input type="checkbox" name="console3" value="PC"> PC<br>
+      <input type="checkbox" name="console4" value="Nintendo"> Nintendo<br>
+      
+      <br>
+      <br>
+      
+      
+ <p class="p"> Is there anything else you would like to add?:</p>    <textarea name="comment" rows="5" cols="80" maxlength="250" placeholder="Enter your comment here..." required></textarea>
+    </>
+      <br>
+      <button id="submit" type="submit" >Submit</button>
+      </form>
+   
+      
+  
