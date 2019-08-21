@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  height:100%;
+  }
+
 #title {
   text-align: center;
   text-weight: bold;
@@ -16,6 +21,8 @@
 #survey-form {
   text-align: center;
   font-size: 20px;
+  margin: 0px;
+  padding: 10px 20px;
   background: #FFDAB9
 }
 
