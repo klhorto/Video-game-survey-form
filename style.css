@@ -1,80 +1,121 @@
-html, body {
-  margin: 0;
-  height:100%;
-  }
+html {
+  background-image: url(https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containerOne {
+  position: relative;
+  background-color: #a3f1ff;
+  opacity: 0.9;
+  
+}
 
-#title {
+#firstimg {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  border-radius: 25%;
+}
+
+#heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+#subheading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  
+}
+
+#basics {
+  
+    margin: auto;
+    padding: 100px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffbda3;
+    opacity: 0.8;
+   
+  
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid lightblue;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  background-color: #a3f3ff;
+ 
+}
+
+input[type=email] {
+  border: none;
+  border-bottom: 2px solid red;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  background-color: #a3f3ff;
+  
+}
+
+input[type=number] {
+  border: none;
+  border-bottom: 2px solid blue;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  background-color: #a3f3ff;
+}
+
+#containerTwo {
+  
+    
+  
+  font-size: 30px;
   text-align: center;
-  text-weight: bold;
-  font-family: "Georgia";
-  border-style: outset;
-  border-color: gray;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 100px;
+  background-color: #ffeba3;
+  opacity: 0.8;
   
 }
 
-#description {
-  text-align: center;
-  font-family: "Georgia";
-  color: black;
+.paragraph {
+    text-align: center;
+  font-size: 25px;
+  background-color: #ffeba3;
+  margin: none;
+  opacity: 0.8;
+    
 }
 
-#survey-form {
-  text-align: center;
-  font-size: 20px;
-  margin: 0px;
-  padding: 10px 20px;
-  background: #FFDAB9
+.sex {
+     margin: 25px 50px 100px 30px;
+     padding: 125px 125px 125px 125px;
+     height:150px;
+     width: 150px;
+    background-color: #65d3e6;
+     border-radius: 20%;
+    border-style: ridge;
+    opacity: 0.8;
+    
+    
 }
 
-#name-label {
-  font-size: 20px;
-  color: 	#000080;
+#girl {
   
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  border-radius: 20%;
+
 }
 
-#email-label {
-  font-size: 20px;
-  color: #000080;
-}
-
-#number-label {
-  font-size: 20px;
-  color: #000080;
-}
-
-#name {
-  width: 200px;
-  height: 18px;
-  font-size: 8px; 
-}
-
-#email {
-  width: 200px;
-  height: 20px;
-  font-size: 8px;
-}
-
-#number {
-  width: 200px;
-  height: 20px;
-  font-size: 8px;
-}
-
-#dropdown {
-  width: 200px;
-}
-
-#submit {
-  text-align:center;
-  font-size: 16px;
-  font-family: "courier";
-  border-radius: 10px;
-  
-}
-
-
-
-.p {
-  color: #000080;
-  
-}

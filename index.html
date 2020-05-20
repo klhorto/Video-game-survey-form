@@ -1,70 +1,89 @@
-<!--DOCTYPE-->
+<!--DOCTYPE HTML-->
+
 
 <html>
-  <body>
-<form id="survey-form">
-
-  <h1 id="title"> Video Game Survey Form </h1>
- <br>
- <br>
-  
-    <p id="description"> A short survey gathering information about the demographics of gamers</p>
-    <br>
-    <br>
+  <head>
+    <title>VG Survey</title>
     
-        <label for="name" id="name-label">*Name:</label>
-       <input type="text" id="name" name="firstname" placeholder="Enter your name" required>
-      <br>
-      <br>
-      <br>
-        <label for="email" id="email-label">*Email:</label>
-        <input type="email" name="email" placeholder="Enter your email" id="email" required>
-      <br>
-      <br>
-      <br>
-        <label for="number" id="number-label">*Age:</label>
-        <input type="number" name="quantity" min="1" max="99" placeholder="Enter your age" id="number" required>
-      <br>
-      <br>
-     <p class="p"> *Gender: (select one)<p> <input type="radio" name="gender" value="male"> Male<br>
-<input type="radio" name="gender" value="female"> Female<br>
-<input type="radio" name="gender" value="other"> Other <br>
-      <br>
-      <br>
-      
-     <p class="p"> *Select your favorite Video Game genre:</p> <select name="genre" id="dropdown" >
-        <option selected disabled hidden style='display: none' value=''>Choose one</option>
-        <option value="fighting">Fighting</option>
-        <option value="role playing game"> RPG</option>
-        <option value="horror">Horror</option>
-        <option value="Action"> Action</option>
-       <option value="FPS">First Person Shooter</option>
-      <option value="MMORPG">MMORPG</option>
-      <option value="strategy">Strategy</option>
+  </head>  
+
+  <body>
+    <div class="containerOne">
+      <img id="firstimg" src="https://images.unsplash.com/photo-1538895194639-f50554a2ca24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80">
+      <div id="heading"> Video Game Survey Form </div>
+ 
   
-        <option value="Adventure">Adventure</option>
-        <option value="Sports">Sports</option>
-      </select>
+      <div id="subheading"> A short survey gathering information about the demographics of gamers</div>
+  
+    </div>
+    
+    <div id="basics">
       
-      <br>
-      <br>
-  <p class="p"> *What systems do you own?:</p>
+      <form id="survey-form">
+    
+      <label for="name">*Name:</label>
+      
+        <input type="text" id="name" name="firstname" placeholder="Enter your name" size="20" required>
+     
+     <label for="email">*Email:</label>
+    
+        <input type="email" name="email" placeholder="Enter your email" required>
+        
+      
+    <label for="number" id="number-label">*Age:</label>
+    
+        <input type="number" name="quantity" min="1" max="99" placeholder="Enter your age" size="10" required>
+    </div>
+     
+      
+      
+     <div class="paragraph"> *Sex: (select one):</div>
+      <div id="containerTwo">
+        <div class="sex"><input type="radio" name="sex" value="male"> Male</div>
+        
+<div class="sex"><img id="girl" src ="https://images.unsplash.com/photo-1541562232579-512a21360020?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"><input type="radio" name="sex" value="female"> Female</div>
+        
+<div class="sex"><input type="radio" name="gender" value="other"> Other </div>
+      </div>
+      
+
+      
+     <p> *Select your favorite Video Game genre:</p> 
+      
+      <div class ="custom-select" style="width:200px">
+        <select>
+        <option value="0">Choose one</option>
+        <option value="1">Fighting</option>
+        <option value="2"> RPG</option>
+        <option value="3">Horror</option>
+        <option value="4"> Action</option>
+       <option value="5">First Person Shooter</option>
+      <option value="6">MMORPG</option>
+      <option value="7">Strategy</option>
+  
+        <option value="8">Adventure</option>
+        <option value="9">Sports</option>
+      </select>
+    </div>  
+        
+     
+  <p> *What systems do you own?:</p>
       <input type="checkbox" name="console1" value="Xbox"> XBox<br>
 <input type="checkbox" name="console2" value="PlayStation"> Playstation<br>
 <input type="checkbox" name="console3" value="PC"> PC<br>
       <input type="checkbox" name="console4" value="Nintendo"> Nintendo<br>
       
-      <br>
-      <br>
       
       
- <p class="p"> Is there anything else you would like to add?:</p>    <textarea name="comment" rows="5" cols="80" maxlength="250" placeholder="Enter your comment here..." required></textarea>
-    </>
-      <br>
+      
+ <p> Is there anything else you would like to add?:</p>    <textarea name="comment" rows="5" cols="80" maxlength="250" placeholder="Enter your comment here..."></textarea>
+    
       <button id="submit" type="submit" >Submit</button>
+      
       </form>
-  </body>
-<html>
+    
+  </>
+</html>
    
       
   
